@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class PurchaseAmount {
+    public static void main(String[] args) {
+        double amount;
+        Scanner sc = new Scanner(System.in);
+        amount = sc.nextDouble();
+        int d =0;
+        double discamt = 0;
+        if (amount < 500)
+            d=0;
+
+        else if (amount>500 && amount<1000) {
+            d=10;
+        }
+        else if (amount > 1000)
+            d=20;
+        discamt = amount * d/100;
+        double finalamt = amount - discamt;
+        System.out.println(finalamt);
+
+    }
+}
