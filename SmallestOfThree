@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class GreatestOfThree {
+    public static void main(String[] args) {
+        int x,y,z;
+        int min;
+        Scanner sc = new Scanner(System.in);
+        x = sc.nextInt();
+        y = sc.nextInt();
+        z = sc.nextInt();
+        if( x<y && x<z){
+            min = x;
+
+        } else if (y<x && y<z) {
+            min = y;
+
+        }
+        else
+            min=z;
+        System.out.println(min);
+
+    }
+}
